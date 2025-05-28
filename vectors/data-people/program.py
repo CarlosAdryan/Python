@@ -12,14 +12,14 @@ typedMen = 0
 
 for i in range(0, n):
     height[i] = float(input(f"Height of the {i}st person: "))
-    genre[i] = (input(f"Genre of the {i}st person: "))
+    genre[i] = (input(f"Genre of the {i}st person: ")).upper()
     minor = height[0]
     if height[i] > bigger:
         bigger = height[i]
-    if genre[i] == "f":
+    if genre[i] == "F":
         typedWomen += 1
         womenSum += height[i]
-    elif genre[i] == "m":
+    elif genre[i] == "M":
         typedMen += 1
 
 for i in range(0, n):
